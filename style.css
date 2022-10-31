@@ -82,6 +82,10 @@ article {
     margin: 25px;
 }
 
+.tracklist li:hover {
+    font-weight: bold;
+}
+
 footer {
 }
 
