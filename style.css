@@ -1,71 +1,19 @@
+@media screen and (max-width: 650px) {
+    .tracklist {
+        flex-direction: column;
+    }
+}
+
 body {
-    background-color: #D2D1D1;
+    background-color: hsl(216 43% 68%);
     font-family: 'Inconsolata', monospace;
     line-height: 1.5em;
-}
-
-header {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-}
-#alb {
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-}
-
-#fruv4, #alb {
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 60px -16px teal;
-}
-
-
-
-footer {
-    text-align: center;
-    margin: 100px auto 0 auto;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-
-.song_title {
-}
-
-.song_title.p {
-    font-size: 1.5em;
-    line-height: 70%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
     padding: 0;
-}
-
-.tracklist {
-    margin: 25px;
-    text-align: center;
-}
-
-.menu li {
-    display: inline;
+    margin: 0;
 }
 
 h1 {
     text-transform: uppercase;
-}
-
-.contents {
-    text-align: center;
-    margin: 20px;
-    padding: 25px;
 }
 
 a {
@@ -77,9 +25,138 @@ a:hover {
     font-weight: bold;
 }
 
+.tracklist > ul > li:nth-child(odd) {
+   color: black;
+}
 
-article {
-    margin: 25px;
+.tracklist > ul > li:nth-child(even) {
+    color: darkslategrey;
+}
+
+/*------------------*/
+/*--delete later----*/
+/*.menu > * {*/
+/*    border: medium solid red;*/
+/*}*/
+/*.menu > * > * {*/
+/*    border: medium solid red;*/
+/*}*/
+/*------------------*/
+
+#banner {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    /*border: medium solid yellow;*/
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    border: medium solid red;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu > * {
+    padding: 0px;
+    margin: 10px;
+}
+
+.menu > .options {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(30px);
+    justify-content: stretch;
+    border: medium solid red;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > ul > li  {
+    padding: 20px 10px;
+    font-size: 2em;
+}
+
+
+#logo {
+    margin: 0;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tracklist > * {
+    padding: 10px;
+    width: 33.33%;
+}
+
+.tracklist .credits {
+    border: medium solid red;
+    flex-shrink: 3;
+}
+
+.alb {
+    border: medium solid red;
+}
+
+.tracklist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*------------------*/
+    border: medium solid blue;
+    /*------------------*/
+}
+
+.tracklist > * {
+    /*------------------*/
+    /*border: medium solid blue;*/
+    /*------------------*/
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    border: medium solid blue;
+}
+
+.tracklist > ul > li:hover {
+    font-weight: bold;
+}
+
+#tracklist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tracklist li:hover {
@@ -87,6 +164,38 @@ article {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+footer > * {
+    font-size: 0.9em;
+}
+
+
+.footmenu {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    /*border: solid medium red;*/
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.footmenu >  li {
+    padding: 15px;
+}
+
+
+
+
+
 
 
