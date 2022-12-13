@@ -13,62 +13,81 @@
     <link rel="stylesheet" href="style.css">
 
     <div class="menu">
-        <img id="logo" src="ind_img/adonocolor.svg">
+        <nav class="menubuttons">
+            <a class="list-item" href="aboutme.html">About Me</a>
+            <a class="list-item" href="music.html">Music</a>
+            <a class="list-item" href=blog.html">Blog</a>
+            <a class="list-item" href="photos.html">Photos</a>
+        </nav>
 
-        <ul class="options">
-            <li class="list-item"><a href="all.html">All</a></li>
-            <li class="list-item"><a href="photos.html">Photos</a></li>
-            <li class="list-item"><a href="video.html">Video</a></li>
-            <li class="list-item"><a href="audio.html">Audio</a></li>
-            <li class="list-item"><a href="blog.html">Blog</a></li>
-        </ul>
+        <img id="logo" src="ind_img/adonocolor.svg">
     </div>
 </header>
 
 <main>
     <div class="contents">
         <h2 class="project_title"><b>Dreaming of Silence in Mono*</b></h2>
+
             <div class="tracklist">
-                <ul class="navmenu">
-                    <li>Track 1</li>
-                    <li>Track 2</li>
-                    <li>Track 3</li>
-                    <li>Track 4</li>
-                    <li>Track 5</li>
-                </ul>
+                <aside class="tracklistmenu">
+                    <a>Track 1</a>
+                    <a>Track 2</a>
+                    <a>Track 3</a>
+                    <a>Track 4</a>
+                    <a>Track 5</a>
+                </aside>
 
                 <img  class="alb"  src="ind_img/mono.png" alt="Working title for an album Dreaming of Silence in Mono*">
 
-                <p class="credits"><i>Written & Produced by <a class="artist_name" href="https://soundcloud.com/adonocolor">Ado No Color (M. Ivanov)</a><br>
-                    Recorded at Leninsky Avenue Studios</i></p>
+                <aside class="credits">
+                    <p><i>Written & Produced by <a class="artist_name" href="https://soundcloud.com/adonocolor">Ado No Color (M. Ivanov)</a><br>
+                        Recorded at Leninsky Avenue Studios</i></p>
+                </aside>
             </div>
     </div>
+
     <div class="contents">
         <h2 class="project_title"><b>*Stereo Echo</b></h2>
         <div class="tracklist">
-            <ul class="navmenu">
-                <li>Track 1</li>
-                <li>Track 2</li>
-                <li>Track 3</li>
-                <li>Track 4</li>
-                <li>Track 5</li>
-            </ul>
+            <aside class="tracklistmenu">
+                <a>Track 1</a>
+                <a>Track 2</a>
+                <a>Track 3</a>
+                <a>Track 4</a>
+                <a>Track 5</a>
+            </aside>
 
             <img src="ind_img/shining.jpg" class="alb" alt="Working title for an album Dreaming of Silence in Mono*">
 
-            <p class="credits"><i>Written & Produced by <a class="artist_name" href="https://soundcloud.com/adonocolor">Ado No Color (M. Ivanov)</a><br>
-                Recorded at Leninsky Avenue Studios</i></p>
+            <aside class="credits">
+                <p><i>Written & Produced by <a class="artist_name" href="https://soundcloud.com/adonocolor">Ado No Color (M. Ivanov)</a><br>
+                    Recorded at Leninsky Avenue Studios</i></p>
+            </aside>
         </div>
     </div>
 </main>
 
 <footer>
-    <ul class="footmenu">
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <nav class="menubuttons">
+            <a href="contact.html">Contact</a>
+        </nav>
 
     <p>© 2022 <sub>Ado</sub> No <sup>Color</sup>, LLC.<br>
         Based in St. Petersburg.</p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="ind_img/grid_gallery/1.jpg" class="img-fluid" alt="1">
+        </div>
+        <div class="gallery-item">
+            <img src="ind_img/grid_gallery/2.jpg" class="img-fluid" alt="2">
+        </div>
+        <div class="gallery-item">
+            <img src="ind_img/grid_gallery/3.jpg" class="img-fluid" alt="3">
+        </div>
+        <div class="gallery-item">
+            <img src="ind_img/grid_gallery/4.jpg" class="img-fluid" alt="4">
+        </div>
+    </div>
 </footer>
 </html>
