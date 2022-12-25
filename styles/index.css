@@ -134,6 +134,67 @@ footer > .menubuttons {
     flex: 2;
 }
 
+#list {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: black solid 1px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+
+#toDoE1 {
+    font-family: 'Inconsolata', monospace;
+    width: 226px;
+    padding: 5px 5px 5px 40px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+#list {
+    margin: 0;
+}
+
+li {
+    width: 304px;
+    display: flex;
+    justify-content: space-between;
+    border: black solid 1px;
+    border-radius: 25px;
+    list-style-type: none;
+    background-color: white;
+    padding: 5px 5px 5px 40px;
+}
+
+li#text {
+    border: black solid 1px;
+}
+
+li.checked {
+    background-color: hsl(56, 100%, 50%);;
+}
+
+span {
+    width: 70px;
+    height: 30px;
+    border: black solid 1px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: hsl(8, 100%, 59%);;
+    text-align: center;
+}
+
 .gallery {
     background-color: black;
     padding: 0;
@@ -204,4 +265,22 @@ footer > .menubuttons {
 .list-item.active {
     text-decoration: underline;
 }
+
+.note_container {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+
 
