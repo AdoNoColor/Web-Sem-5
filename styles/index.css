@@ -188,7 +188,7 @@ span {
     text-align: center;
 }
 
-.gallery {
+.gallery-grid {
     background-color: black;
     padding: 0;
     display: grid;
@@ -275,5 +275,79 @@ span {
     justify-self: center;
 }
 
+.gallery-container {;
+    align-self: center;
+    margin: auto;
+    padding-top: 60px;
+}
 
+.gallery h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 
+.preloader {
+    margin-right: auto;
+    margin-left: auto;
+    border: 16px solid lightgray;
+    border-top: 16px solid hsl(8, 100%, 59%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.gallery p {
+    margin-bottom: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.gallery-ul {
+    justify-content: space-evenly;
+    margin: 10px 10px 0;
+    list-style: none;
+    word-break: break-word;
+}
+
+.error {
+    display: none;
+    text-align: center;
+    color: hsl(8, 100%, 59%);
+}
+
+.pages-nav {
+    justify-content: center;
+    margin: 15px;
+}
+
+.previous-button {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    background-color: hsl(8, 100%, 59%);
+    margin-right: 15px;
+    border-radius: 25px;
+}
+
+.next-button {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    background-color: hsl(8, 100%, 59%);
+    margin-left: 15px;
+    border-radius: 25px;
+}
