@@ -35,8 +35,6 @@ body {
 
 #logo {
     justify-self: flex-start;
-    position: sticky;
-    top: 0;
 }
 
 .options {
@@ -120,6 +118,7 @@ footer {
 }
 
 footer > .menubuttons {
+    margin-top: 50px;
     padding: 0;
     font-size: 1.5em;
 }
@@ -146,3 +145,65 @@ footer > .menubuttons {
     object-fit: cover;
 }
 
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.post > h2 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.post_info {
+    padding-left: 100px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 10px;
+}
+
+.contact_post_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_post_info > * {
+    margin: 0;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+
+.sign-container {
+    height: 100vh;
+}
+
+#clock {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.list-item.active {
+    text-decoration: underline;
+}
+
+.menubuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
