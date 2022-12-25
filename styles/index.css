@@ -135,6 +135,7 @@ footer > .menubuttons {
 }
 
 #list {
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -162,10 +163,6 @@ ul {
     border-radius: 25px;
 }
 
-#list {
-    margin: 0;
-}
-
 li {
     width: 304px;
     display: flex;
@@ -175,10 +172,6 @@ li {
     list-style-type: none;
     background-color: white;
     padding: 5px 5px 5px 40px;
-}
-
-li#text {
-    border: black solid 1px;
 }
 
 li.checked {
