@@ -14,6 +14,11 @@
     <script src="scripts/timeLoad.js"></script>
     <script src="scripts/timeCount.js"></script>
     <script src="scripts/menu.js"></script>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+            rel="stylesheet"
+    />
 </head>
 
 <body onload="timeCount();">
@@ -43,46 +48,23 @@
     </header>
 
     <main>
-        <div class="contents">
-            <h2 class="project_title"><b>Dreaming of Silence in Mono*</b></h2>
+                    <!--        Based layout for swiper.js components -->
+                    <div class="swiper-container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
 
-                <div class="tracklist">
-                    <aside class="tracklistmenu">
-                        <a>Track 1</a>
-                        <a>Track 2</a>
-                        <a>Track 3</a>
-                        <a>Track 4</a>
-                        <a>Track 5</a>
-                    </aside>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h2 class="project_title"><b>Dreaming of Silence in Mono*</b></h2>
+                                <img src="ind_img/mono.png" alt="album"/>
+                            </div>
 
-                    <img  class="alb"  src="ind_img/mono.png" alt="Working title for an album Dreaming of Silence in Mono*">
-
-                    <aside class="credits">
-                        <p><i>Written & Produced by <a class="artist_name" href="https://soundcloud.com/adonocolor">Ado No Color (M. Ivanov)</a><br>
-                            Recorded at Leninsky Avenue Studios</i></p>
-                    </aside>
-                </div>
-        </div>
-
-        <div class="contents">
-            <h2 class="project_title"><b>*Stereo Echo</b></h2>
-            <div class="tracklist">
-                <aside class="tracklistmenu">
-                    <a>Track 1</a>
-                    <a>Track 2</a>
-                    <a>Track 3</a>
-                    <a>Track 4</a>
-                    <a>Track 5</a>
-                </aside>
-
-                <img src="ind_img/shining.jpg" class="alb" alt="Working title for an album Dreaming of Silence in Mono*">
-
-                <aside class="credits">
-                    <p><i>Written & Produced by <a class="artist_name" href="https://soundcloud.com/adonocolor">Ado No Color (M. Ivanov)</a><br>
-                        Recorded at Leninsky Avenue Studios</i></p>
-                </aside>
-            </div>
-        </div>
+                            <div class="swiper-slide">
+                                <h2 class="project_title"><b>*Stereo Echo</b></h2>
+                                <img src="ind_img/shining.jpg" alt="album"/>
+                            </div>
+                        </div>
+                    </div>
     </main>
 
     <footer>
@@ -93,5 +75,8 @@
         <p>© 2022 <sub>Ado</sub> No <sup>Color</sup>, LLC.<br>
             Based in St. Petersburg.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/coverSwiper.js"></script>
 </body>
 </html>

@@ -353,3 +353,32 @@ span {
     margin-left: 15px;
     border-radius: 25px;
 }
+
+.swiper-container {
+    max-height: 95.5vh;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    max-width: 100%;
+}
+
+.swiper-container img {
+    max-height: 95.5vh;
+    min-width: 100%;
+}
+
+.swiper-container {
+    /*align-content: center;*/
+    position: relative;
+    left: 30%;
+    width: 95.5vh;
+    height: 95.5vh;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    color: hsl(56, 100%, 50%) !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    color: hsl(56, 100%, 50%) !important;
+}
