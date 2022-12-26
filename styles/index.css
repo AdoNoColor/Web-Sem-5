@@ -34,6 +34,8 @@ body {
 }
 
 #logo {
+    min-width: 200px;
+    max-width: 1000px;
     justify-self: flex-start;
 }
 
